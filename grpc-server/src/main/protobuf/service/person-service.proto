@@ -1,0 +1,8 @@
+syntax = "proto3";
+package service;
+import "service/person.proto";
+option java_multiple_files = true;
+
+service PersonService {
+  rpc post(entity.PersonRequest) returns (entity.PersonResponse);
+}
