@@ -27,6 +27,7 @@ public class RunServer {
                 }
             }
         });
+        System.out.println(">>>>> Server is running on port 7565 \n\n");
         if (server != null) {
             server.awaitTermination();
         }
